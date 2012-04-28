@@ -1,0 +1,26 @@
+{% extends "app/main_template.html" %}
+{% load i18n %}
+{% block content %}
+       <section id="login">
+        <article class="splash">
+            <div class="indented scrollable">
+                <h1><span class="semi-opacity">TruCo<span></h1>
+                <form>
+				<!-- El nombre de usuario debe ser unico. Comprobar antes de continuar-->
+                <input type="text" placeholder="nombre de usuario" required />
+                
+                <input type="password" placeholder="contraseña" required />
+
+                <p><input type="submit"  data-icon="key" value="Entrar"></p>
+                
+				<p><small>Recordar usuario</small> <input type="checkbox" name="recordar"></label></p>
+				<!-- Cambiar para que haga la petición al servidor -->	
+				<small>No tienes cuenta? Regístrate <a href="#" value="aquí" >aquí</a></small>	
+			</form>
+            </div>
+        </article>
+    </section>
+    
+
+{% endblock %}
+

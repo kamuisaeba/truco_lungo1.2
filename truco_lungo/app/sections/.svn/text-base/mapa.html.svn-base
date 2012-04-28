@@ -1,0 +1,17 @@
+<section id="mapas">
+	<header data title="Mapa" data-back="left">
+		<a href="#instructions" id="btnInstructions" data-target="article" class="onright" data-icon="map" ></a>
+	</header>
+	<footer class="toolbar">
+		<nav>
+			<a href="#map" data-icon="pushpin" data-label="mapa" data-target="article"></a>
+			<a href="#instrucciones" id="btnInstructions" data-target="article" data-icon="map"></a>
+		</nav>
+	</footer>
+        <article id="map">
+        	<div id="map_div"></div>
+        </article>
+        <article id="instrucciones" class="list scrollable">
+       <!-- 	<div id="instrucciones_div"></div> -->
+        </article>
+</section>

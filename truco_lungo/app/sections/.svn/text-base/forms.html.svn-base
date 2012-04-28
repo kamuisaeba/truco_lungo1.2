@@ -1,0 +1,122 @@
+<section id="forms" class="current">
+<!-- Sección para todos los formularios-->
+    <header class="extended" data-back="left" data-title="h">
+ 		<nav class="onright">
+ 			<a href="#" id="btnNuevaLista" data-article="nuevaLista" data-icon="check green" data-label="Ok"></a>
+			<a href="#" id="btnNuevoProducto" data-article="nuevoProducto" data-icon="check green" data-label="Ok"></a>
+			<a href="#" id="btnEditLista" data-article="editarLista" data-icon="refresh green" data-label="Ok"></a>
+			<a href="#" id="btnEditarProducto" data-article="editarProducto" data-icon="refresh green" data-label="Ok"></a> 
+	   	</nav>
+    </header>
+    <!-- Formulario nueva lista -->
+	<article id="nuevaLista" class="list scrollable">
+		<div class="indented">
+		<ul class="form" id="formNewLista">
+			<li><input type="text" placeholder="nombre de lista" id="nombreLista" /></li>
+			<li>
+				<label>Notas</label>
+				<textarea id="descriptLista" placeholder="Descripción" ></textarea> 
+			</li>
+		 </ul>
+	   </div>			
+	</article>
+	<article id="editarLista" class="list scrollable">
+		<div class="indented">
+		<ul class="form" id="formEditLista">
+			<li><input type="text" placeholder="nombre de lista" id="editNombreLista"/></li>
+			<li>
+				<label>Notas</label>
+				<textarea id="editDescriptLista" placeholder="Descripción"></textarea> 
+			</li>
+		 </ul>
+	   </div>			
+	</article>
+	<!-- Formulario nuevo producto -->
+	<article  id="nuevoProducto">
+		<div class="indented">
+		<ul class="form" id="formNuevoProducto">
+			<li><input type="text" placeholder="nombre del producto" id="nombreProducto"/></li>
+			<li>
+				<label>Categoría</label>
+				<label class="select">
+				<!-- Obtenemos las categorias de forma dinámica -->
+					<select class="custom" id="categoria">
+					</select>
+				</label>
+			</li>
+			<li>
+				<label>Marca</label>
+				<label class="select">
+				<!-- Obtenemos las marcas de forma dinámica -->
+					<select class="custom" id="marca">
+					</select>
+				</label>
+			</li>
+			<li >
+				<input type="number" id="cantidad" value="0" min="0"/>
+			</li>
+		 </ul>
+	   </div>					
+	</article>
+	<article  id="editarProducto">
+		<div class="indented">
+		<ul class="form" id="formEditarProducto">
+			<li><input type="text" placeholder="nombre de producto" id="editNombreProducto"/></li>
+			<li>
+				<label>Categoria</label>
+				<label class="select">
+				<!-- Obtenemos las categorias de forma dinámica -->
+					<select class="custom" id="editCategoria">
+						<option></option>
+					</select>
+				</label>
+			</li>
+			<li>
+				<label>Marca</label>
+				<label class="select">
+				<!-- Obtenemos las marcas de forma dinámica -->
+					<select class="custom" id="editMarca">
+						<option></option>
+					</select>
+				</label>
+			</li>
+			<li >
+				<input type="number" id="editCantidad" min="0"/>
+			</li>
+		 </ul>
+	   </div>					
+	</article>
+
+
+    <!-- Articulo login (No va a ser utilizado ahora-->
+    <article class="splash" id='login'>
+        <div class="indented">
+            <h1>TruCo<span class="semi-opacity">Web<span></h1>
+            <ul class="form">
+				<li><input type="text" id="usuario" placeholder="Introduce tu usuario" class="required" /></li>
+					<li><input type="password" id="password" placeholder="Introduce tu password" class="required" title="Campo obligatorio"/></li>
+					<li>
+					 <label>Recordar usuario</label>
+        			<label class="checkbox onright">
+        				<input type="checkbox" id="recordar" checked/>
+        			</label>
+			<!-- Cambiar para que haga la petición al servidor -->	
+			<li><a href="#" class="button arcticblue" id="btnLogin">Entrar</a></li>
+			<li><small>No tienes cuenta? Regístrate <a href="#register" id="btnRegister" data-target="article">aquí</a></small>	</li>
+			</ul>
+		</div>
+    </article> 
+    <!-- Formulario registro (No va a ser usado actualmente-->
+   <article id="register" class="list scrollable">
+		<div class="indented">
+		<ul>
+			<form id="formRegister">
+				<li><input type="text" placeholder="nombre de usuario" id="nombre" required /></li>
+				<li><input type="password" placeholder="contraseña" id="passwd" required /></li>
+				<li><input type="email" placeholder="email" id="email" required /></li>
+				<li><input type="submit" id="btnRegister" value="Entrar" > </li>
+			</ul>
+		</ul>
+	   </div>
+    </article>
+</section>

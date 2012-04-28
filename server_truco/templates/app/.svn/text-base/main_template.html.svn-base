@@ -1,0 +1,45 @@
+<!doctype html>
+<html manifest="index.appcache">
+<head>
+    <meta charset="utf-8">
+    <title>LungoJS</title>
+    <meta name="description" content="">
+    <meta name="author" content="Javier Jiménez Villar (@soyjavi)">
+    <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- For iPhone 4 with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/icon@2x.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/icon.png">
+    <link rel="apple-touch-startup-image" href="assets/images/default.png">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/site_media/js/lungo.js/lungo-1.1.2.min.css">
+    <link rel="stylesheet" href="/site_media/js/lungo.js/lungo.theme.default.css">
+</head>
+
+<body class="app">
+
+
+        {% block content %}
+
+        
+
+        {% endblock %}
+
+
+    <!-- LungoJS (Production mode) -->
+    <script src="/site_media/js/lungo.js/lungo-1.1.2.packed.js"></script>
+
+    <!-- Cuando se ponga en producción conviene juntarlos y empaquetarlos, incluso dentro de lungo.js/lungo-1.1.2.packed.js -->
+    <script src="/site_media/js/app/app.js"></script>
+    <script src="/site_media/js/app/data.js"></script>
+    <script src="/site_media/js/app/events.js"></script>
+    <script src="/site_media/js/app/services.js"></script>
+    <script src="/site_media/js/app/view.js"></script>
+</body>
+</html>

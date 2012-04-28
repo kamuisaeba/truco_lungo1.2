@@ -1,0 +1,27 @@
+{% extends "app/main_template.html" %}
+{% load i18n %}
+
+
+{% block content %}
+
+    <section id="hello_world">
+        <header data-title="Hola mundo">
+            <a href="#" data-target="aside" data-icon="items" class="button"></a>
+	    <nav class="onright">
+	      <a href="/cargar_listas/">carga la lista</a>
+	      <a href="#art2" data-target="article" data-icon="files"></a>
+	      <a href="#art3" data-target="article" data-icon="folder"></a>
+	    </nav>
+        </header>
+
+        <footer></footer>
+
+        <aside></aside>
+
+        <article id="art1">werrrryyysdfsdsdfa</article>
+        <article id="art2">AAAAAAAAAAAAAAAAAA</article>
+        <article id="art3">OOOOOOOOOOOOOOOOO</article>
+    </section>
+
+{% endblock %}
+
